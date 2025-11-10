@@ -1,1 +1,27 @@
 [2025-09-29 04:48:40,129: INFO: main: Test done.]
+[2025-11-10 23:36:32,992: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-11-10 23:36:32,992: ERROR: main: [Errno 2] No such file or directory: 'Kidney-Disease-Classification\\config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Kidney-Disease-Classification\main.py", line 9, in <module>
+    obj.main()
+  File "C:\Kidney-Disease-Classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\kidney-disease-classification\src\cnnClassifier\config\configuration.py", line 12, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\ankur\miniconda3\envs\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\kidney-disease-classification\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise e
+  File "c:\kidney-disease-classification\src\cnnClassifier\utils\common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Kidney-Disease-Classification\\config\\config.yaml'
+[2025-11-10 23:37:12,279: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-11-10 23:37:12,279: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-11-10 23:37:12,279: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-10 23:37:12,279: INFO: common: created directory at: artifacts]
+[2025-11-10 23:37:12,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-10 23:37:12,279: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1uR7_D_NkuOkeeAYWTdTuDDZHRpM_-8rG/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-11-10 23:37:20,045: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1uR7_D_NkuOkeeAYWTdTuDDZHRpM_-8rG/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-11-10 23:37:20,547: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
